@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url(recortePer.png);
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    background-position-y: 70px;
+
+}
+
+.encabezado {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end; /* Para separar los elementos */
+    align-items: center; /* Para alinear verticalmente los elementos */
+}
+
+.links {
+    display: flex;
+}
+
+.links .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.container {
+    position: relative;
+    right: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    box-shadow: black;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
+    margin-right: auto; 
+    margin-left: 0; 
+}
+
+.form-container h2 {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* ajuste de la página a móviles o tablets */
+@media (max-width: 911px) {
+    body {
+        padding: 30px;
+    }
+
+    .encabezado {
+        justify-content: center; /* Centra los elementos en dispositivos móviles */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Espacio entre los enlaces en dispositivos móviles */
+    }
+
+    .links {
+        position: static; /* Elimina la posición absoluta en dispositivos móviles */
+        background-color: transparent; /* Fondo transparente en dispositivos móviles */
+        padding: 0;
+    }
+
+    .btn {
+        width: 100%; /* Botones ocupan el ancho completo en dispositivos móviles */
+        margin-bottom: 10px; /* Espacio entre los botones en dispositivos móviles */
+    }
+}

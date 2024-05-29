@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    size: 15px;
+}
+/* Estilos para h1 */
+h1{
+    
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  letter-spacing: -2px;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+}
+
+/* Estilos para el boton y el inputbox de el buscador */
+.btn-buscar{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+}
+.btn-buscar:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+.box-buscar{
+    height: 40px;
+}
+
+
+
+
+/* Estilos para la tabla */
+.tabla {
+    font-family: "Trebuchet MS", sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    font-size: 20px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.tabla th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Estilo para las imágenes en la tabla */
+.tabla img {
+    max-width: 180px;
+    height: auto;
+}
+/* Estilos para el boton editar */
+
+.btn-editar{
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease; 
+}
+
+
+/* Ajuste de la página para dispositivos móviles o tablets */
+@media (max-width: 911px) {
+    body {
+        padding: 30px;
+    }
+
+    .encabezado {
+        justify-content: center; /* Centra los elementos en dispositivos móviles */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Espacio entre los enlaces en dispositivos móviles */
+    }
+
+    .links {
+        position: static; /* Elimina la posición absoluta en dispositivos móviles */
+        background-color: transparent; /* Fondo transparente en dispositivos móviles */
+        padding: 0;
+    }
+
+    .btn {
+        width: 100%; /* Botones ocupan el ancho completo en dispositivos móviles */
+        margin-bottom: 10px; /* Espacio entre los botones en dispositivos móviles */
+    }
+}
+

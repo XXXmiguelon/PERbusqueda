@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilo del cuerpo de la pagina principal */
+body{
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 100vh;
+    background-image: url(LogoPoliciaER.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* estilo del formulario para ingresar a la pagina */
+form{
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350;
+    box-shadow: blanchedalmond;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+/* estilo encabezado de la pagina */
+h2{
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+/* estilo del label */
+label{
+    font-size: 17px;  
+    margin-bottom: 5px;
+}
+/*  estilo ingreso de la informacion de la cuenta */
+input{
+    padding: 15px 11px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 15px;
+}
+/* estilo boton para ingresar // cuando este andando la base de datos .remember y .btn-1" */
+.btn-1{
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.btn-1:hover{
+    background-color:cadetblue;
+}
+/* ajuste de la pagina a moviles o tablets */
+@media (max-width: 911px) {
+    body {
+        padding: 30px;
+    }
+
+    .encabezado {
+        justify-content: center; /* Centra los elementos en dispositivos móviles */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Espacio entre los enlaces en dispositivos móviles */
+    }
+
+    .links {
+        position: static; /* Elimina la posición absoluta en dispositivos móviles */
+        background-color: transparent; /* Fondo transparente en dispositivos móviles */
+        padding: 0;
+    }
+
+    .btn {
+        width: 100%; /* Botones ocupan el ancho completo en dispositivos móviles */
+        margin-bottom: 10px; /* Espacio entre los botones en dispositivos móviles */
+    }
+}

@@ -1,0 +1,81 @@
+/* Estilo para el formulario */
+body{
+    background-image: url(LogoPoliciaER.jpg);
+    background-position: center center;
+    
+}
+.policia-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.form-policia {
+    background-position-x: 150px;
+    background-position-y: -120px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para los campos de entrada */
+  form input[type="text"],
+  form input[type="password"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Estilo para el botón al pasar el ratón por encima */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para el encabezado del formulario */
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+/* ajuste de la página a móviles o tablets */
+@media (max-width: 911px) {
+  body {
+      padding: 30px;
+  }
+
+  .encabezado {
+      justify-content: center; /* Centra los elementos en dispositivos móviles */
+  }
+
+  .nav-link {
+       margin: 10px 0; /* Espacio entre los enlaces en dispositivos móviles */
+  }
+
+  .links {
+        position: static; /* Elimina la posición absoluta en dispositivos móviles */
+        background-color: transparent; /* Fondo transparente en dispositivos móviles */
+        padding: 0;
+    }
+
+    .btn {
+        width: 100%; /* Botones ocupan el ancho completo en dispositivos móviles */
+        margin-bottom: 10px; /* Espacio entre los botones en dispositivos móviles */
+    }
+}
